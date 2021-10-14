@@ -196,6 +196,15 @@ body {
    
 }
 
+.card-top-vis {
+    background-colorr:white;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: block;
+   
+}
+
 .card-top h2 {
     font-size: 40px;
     font-weight: bold;
