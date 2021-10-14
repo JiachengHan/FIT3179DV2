@@ -7,6 +7,13 @@
       "fontSize":20,
       "fontWeight":"bolder"
     },
+    "config": {
+        "style": {
+            "cell": {
+                "stroke": "transparent"
+            }
+        }
+    },
     "height": "container",
     "data": {
         "url": "https://raw.githubusercontent.com/JiachengHan/tt/main/js/emission_VIC_1990_2018.csv"
