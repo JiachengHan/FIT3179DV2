@@ -1,9 +1,14 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": "container",
-    "height": 500,
+    "title":{
+      "text":"Emission Equivalent Distribution in VIC",
+      "fontSize":20,
+      "fontWeight":"bolder"
+    },
+    "height": "container",
     "data": {
-        "url": "data/emission/emission_VIC_1990_2018.csv"
+        "url": "https://raw.githubusercontent.com/JiachengHan/tt/main/js/emission_VIC_1990_2018.csv"
     },
     "transform": [{
             "window": [{
