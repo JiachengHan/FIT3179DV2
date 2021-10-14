@@ -317,6 +317,41 @@ body {
     z-index: 5;
 }
 
+#bar3 {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 480px;
+    z-index: 5;
+}
+
+#bar4 {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 480px;
+    z-index: 5;
+}
+
+#pie1 {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 480px;
+    z-index: 5;
+}
+
+#map2 {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 480px;
+    z-index: 5;
+}
+
+
+
+
 .imp-text {
     color: red;
     font-weight: bold;
