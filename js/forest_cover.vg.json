@@ -26,7 +26,7 @@
     },
     "layer": [{
             "data": {
-                "url": "https://raw.githubusercontent.com/JiachengHan/tt/main/js/world.json",
+                "url": "js/world.json",
                 "format": { "type": "topojson", "feature": "world" }
             },
             "transform": [{
@@ -43,13 +43,13 @@
         },
         {
             "data": {
-                "url": "https://raw.githubusercontent.com/JiachengHan/tt/main/js/forest-area-as-share-of-land-area_map.csv"
+                "url": "data/forest/forest-area-as-share-of-land-area_map.csv"
             },
             "transform": [{
                     "lookup": "Code",
                     "from": {
                         "data": {
-                            "url": "https://raw.githubusercontent.com/JiachengHan/tt/main/js/world.json",
+                            "url": "js/world.json",
                             "format": {
                                 "type": "topojson",
                                 "feature": "world"
