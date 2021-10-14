@@ -7,7 +7,7 @@
     "vconcat": [{
             "width": "container",
             "height": 400,
-            "data": { "url": "https://raw.githubusercontent.com/JiachengHan/tt/main/js/emission_VIC_1990_2018.csv" },
+            "data": { "url": "data/emission/emission_VIC_1990_2018.csv" },
             "layer": [{
                     "mark": {
                         "type": "bar"
@@ -66,11 +66,11 @@
             "height": 70,
             "data": {
                 "values": [
-                    { "F": "Electricity generation", "y": "Represent", "link": "https://raw.githubusercontent.com/JiachengHan/tt/main/emission/Electricity_generation.png" },
-                    { "F": "Transport", "y": "Represent", "link": "https://raw.githubusercontent.com/JiachengHan/tt/main/emission/transport.png" },
-                    { "F": "Direct combustion", "y": "Represent", "link": "https://raw.githubusercontent.com/JiachengHan/tt/main/emission/direct.png" },
-                    { "F": "Agriculture", "y": "Represent", "link": "https://raw.githubusercontent.com/JiachengHan/tt/main/emission/Agriculture.png" },
-                    { "F": "Waste", "y": "Represent", "link": "https://raw.githubusercontent.com/JiachengHan/tt/main/emission/Waste.png" }
+                    { "F": "Electricity generation", "y": "Represent", "link": "img/emission/Electricity_generation.png" },
+                    { "F": "Transport", "y": "Represent", "link": "img/emission/transport.png" },
+                    { "F": "Direct combustion", "y": "Represent", "link": "img/emission/direct.png" },
+                    { "F": "Agriculture", "y": "Represent", "link": "img/emission/Agriculture.png" },
+                    { "F": "Waste", "y": "Represent", "link": "img/emission/Waste.png" }
                 ]
             },
             "mark": {
