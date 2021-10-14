@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": { "url": "https://raw.githubusercontent.com/JiachengHan/tt/main/js/forest-area-primary-planted_area.csv" },
+    "data": { "url": "data/forest/forest-area-primary-planted_area.csv" },
     "width": "container",
     "height": 500,
     "title": "Forest Area by Type",
