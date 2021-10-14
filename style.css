@@ -167,14 +167,14 @@ body {
     background-color: white;
     padding: 20px;
     margin-top: 20px;
-    z-index: -5;
+    z-index: -2;
 }
 
 .card-right {
     background-color: white;
     padding: 20px;
     margin-top: 20px;
-    z-index: -5;
+    z-index: -2;
 }
 
 .card {
@@ -185,7 +185,7 @@ body {
     text-align: center;
     position: relative;
     display: block;
-    z-index: -5;
+    z-index: -2;
 }
 
 .card-top {
