@@ -49,12 +49,12 @@
     "layer": [{
             "mark": {
                 "type": "arc",
-                "outerRadius": 240,
-                "innerRadius": 150
+                "outerRadius": 200,
+                "innerRadius": 125
             }
         },
         {
-            "mark": { "type": "text", "radius": 280, "fill": "black", "fontSize": 15 },
+            "mark": { "type": "text", "radius": 220, "fill": "black", "fontSize": 15 },
             "encoding": {
                 "text": { "field": "Factor", "type": "nominal" }
             }
@@ -62,7 +62,7 @@
         {
             "mark": {
                 "type": "text",
-                "radius": 200,
+                "radius": 180,
                 "fontSize": 18,
                 "fill": "white"
             },
