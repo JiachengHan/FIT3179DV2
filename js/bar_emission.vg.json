@@ -5,8 +5,8 @@
         "fontSize": 20
     },
     "vconcat": [{
-            "width": 800,
-            "height": 300,
+            "width": 1100,
+            "height": 325,
             "data": { "url": "data/emission/emission_VIC_1990_2018.csv" },
             "layer": [{
                     "mark": {
@@ -62,8 +62,8 @@
             }
         },
         {
-            "width": 800,
-            "height": 52,
+            "width": 1100,
+            "height": 56,
             "data": {
                 "values": [
                     { "F": "Electricity generation", "y": "Represent", "link": "img/emission/Electricity_generation.png" },
