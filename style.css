@@ -165,7 +165,7 @@ body {
 
 .card-left {
     background-color: white;
-    height: 480px;
+    height: 500px;
     padding: 20px;
     margin-top: 20px;
     z-index: -2;
@@ -173,7 +173,7 @@ body {
 
 .card-right {
     background-color: white;
-    height: 480px;
+    height: 500px;
     padding: 20px;
     margin-top: 20px;
     z-index: -2;
@@ -183,7 +183,7 @@ body {
     background-color: white;
     padding: 20px;
     margin-top: 20px;
-    height: 480px;
+    height: 500px;
     text-align: center;
     position: relative;
     display: block;
@@ -192,7 +192,7 @@ body {
 
 .card-top {
     width: 100%;
-    height: 480px;
+    height: 500px;
     text-align: center;
     position: relative;
     display: block;
@@ -201,7 +201,7 @@ body {
 
 .card-top-vis {
     background-colorr:white;
-    height: 480px;
+    height: 500px;
     width: 100%;
     text-align: center;
     position: relative;
@@ -275,7 +275,7 @@ body {
     position: relative;
     display: block;
     width: 100%;
-    height: 100%;
+    height: 480px;
     z-index: 5;
     /*height: 1000px;
 	width: 800px;*/
@@ -285,7 +285,7 @@ body {
     position: relative;
     display: block;
     width: 100%;
-    height: 100%;
+    height: 480px;
     z-index: 5;
 }
 
@@ -293,7 +293,7 @@ body {
     position: relative;
     display: block;
     width: 100%;
-    height: 100%;
+    height: 480px;
     z-index: 5;
 }
 
