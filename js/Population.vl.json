@@ -14,7 +14,7 @@
         }
     }],
     "layer": [{
-            "data": { "./data/population_total.csv" },
+            "data": { "url":"data/population_total.csv" },
             "transform": [
                 { "filter": "datum.Year==Year_selection" },
                 { "filter": "datum.Population > 75000000" },
@@ -52,7 +52,7 @@
         },
         {
             "data": {
-                "./data/population_total.csv"
+                "url":"data/population_total.csv"
             },
             "layer": [{
                     "mark": {
