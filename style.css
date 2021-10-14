@@ -202,7 +202,6 @@ body {
     text-align: center;
     position: relative;
     display: block;
-    z-index:-2;
 }
 
 .card-top-vis {
@@ -211,7 +210,6 @@ body {
     text-align: center;
     position: relative;
     display: block;
-    z-index:-2;
 }
 
 .card-top h2 {
