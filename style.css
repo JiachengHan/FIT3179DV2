@@ -275,10 +275,8 @@ body {
     position: relative;
     display: block;
     width: 100%;
-    height: 480px;
+    height: 450px;
     z-index: 5;
-    /*height: 1000px;
-	width: 800px;*/
 }
 
 #bar1 {
