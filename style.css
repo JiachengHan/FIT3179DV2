@@ -143,6 +143,7 @@ body {
     background-repeat: no-repeat;
     width: 100%;
     height: 1000px;
+    z-index: -1;
 }
 
 .section-page {
@@ -173,19 +174,16 @@ body {
 /* 文章卡片效果 */
 
 .card-left {
-    background-color: white;
     padding: 20px;
     margin-top: 20px;
 }
 
 .card-right {
-    background-color: white;
     padding: 20px;
     margin-top: 20px;
 }
 
 .card {
-    background-color: white;
     padding: 20px;
     margin-top: 20px;
     height: 450px;
@@ -199,6 +197,7 @@ body {
     text-align: center;
     position: relative;
     display: block;
+   
 }
 
 .card-top h2 {
