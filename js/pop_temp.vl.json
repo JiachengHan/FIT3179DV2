@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "Population & Average Temperature",
     "width": "container",
-    "height": 450,
+    "height": "container",
     "layer": [{
             "data": { "url": "data/population/population_total.csv" },
             "mark": {
