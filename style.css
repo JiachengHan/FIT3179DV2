@@ -164,29 +164,37 @@ body {
 /* Card */
 
 .card-left {
+    background-color: white;
     padding: 20px;
     margin-top: 20px;
+    z-index: -1;
 }
 
 .card-right {
+    background-color: white;
     padding: 20px;
     margin-top: 20px;
+    z-index: -1;
 }
 
 .card {
+    background-color: white;
     padding: 20px;
     margin-top: 20px;
     height: 450px;
     text-align: center;
     position: relative;
     display: block;
+    z-index: -1;
 }
 
 .card-top {
+    background-color: white;
     width: 100%;
     text-align: center;
     position: relative;
     display: block;
+    z-index: -1;
    
 }
 
