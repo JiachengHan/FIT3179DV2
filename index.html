@@ -96,36 +96,106 @@
             </div>
         </div>
     </section>
+    
     <section id="section2" class="section-page">
         <div class="container">
             <div class="row">
                 <div class="leftcolumn">
                     <div class="card-left">
-                        <h2>title2</h2>
-                        <h5> </h5>
-                        <div class="fakeimg" style="height:200px;">image</div>
-                        <p>text...</p>
-                        <p> </p>
+                        <div id="bar1">
+                        </div>
+                        <script type="text/javascript">
+                            var spec2 = "js/bar_emission.vg.json";
+                            vegaEmbed('#bar1', spec2, {
+                                "actions": false
+                            }).then(function(result) {
+                                // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                            }).catch(console.error);
+                        </script>
                     </div>
                 </div>
                 <div class="rightcolumn">
                     <div class="card-right">
-                        <h2>title 2</h2>
-                        <div class="fakeimg" style="height:100px;">image</div>
-                        <p>text..</p>
+                        <div id="bar2">
+                        </div>
+                        <script type="text/javascript">
+                            var spec2 = "js/pie_emission.vg.json";
+                            vegaEmbed('#bar2', spec2, {
+                                "actions": false
+                            }).then(function(result) {
+                                // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                            }).catch(console.error);
+                        </script>
                     </div>
-
                 </div>
-                <div class="column">
-                    <div class="card">
-                        <h3>title3</h3>
-                        <p>text...</p>
+            </div>
+            <div class="row">
+                <div class="leftcolumn">
+                    <div class="card-left">
+                        <video width=100% height="500" controls>
+                            <source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg>
+                            <source src="/build/videos/arcnet.io(7-sec).mp4" type=video/mp4>
+                        </video>
+                    </div>
+                </div>
+                <div class="rightcolumn">
+                    <div class="card-right">
+                        <h2>Greenhouse Gas Emission</h2>
+                        <p>Due to the concern about the greenhouse effect in recent years, Emissions in the year to March 2021 were 494.2 million tonnes <span class="blods">– 5.3% or 27.8 million tonnes</span> lower than the previous year.</p>
+                        <p>From the above visualisations, Except the emission provided by the electricity generate, the following three factors, <span class="imp-text">Transport, Direct Combustion, & Agriculture</span> are closely related to human life.</p>
+                        <p>From the report IPCC 2007, the lifecycle of the greenhouse gas is around <span class="imp-text">12-50000</span> year including the lifecycle of CO2 which is <span class="imp-text">50-200</span> years.</p>
+                        <p>Imgine what if we didn't control greenhouse gas emission in time, according to the lifecycle of it, the polar glaciers will soon melt. That's <span class="imp-text">the Big End</span></p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section id="section3" class="section-page">
+        <div class="container">
+            <div class="row">
+                <div class="card-top-vis">
+                    <div id="symbol_map">
+                    </div>
+                    <script type="text/javascript">
+                        var spec2 = "js/forest_cover.vg.json";
+                        vegaEmbed('#symbol_map', spec2, {
+                            "actions": false
+                        }).then(function(result) {
+                            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                        }).catch(console.error);
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card-left">
+                    <div id="bar2">
+                    </div>
+                    <script type="text/javascript">
+                        var spec2 = "js/forest_area.vg.json";
+                        vegaEmbed('#bar2', spec2, {
+                            "actions": false
+                        }).then(function(result) {
+                            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                        }).catch(console.error);
+                    </script>
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="card-right">
+                    <h2>Forest Area</h2>
+                    <p>Through the map above, we can see that the percentage of forest area cover is obviously decrease in some country.</p>
+                    <p>According to the research, deforestation is in fact considered the second major driver of climate change (more than the entire global transport sector), responsible for <span class="imp-text">18-25%</span> of global annual carbon dioxide
+                        emissions.
+                    </p>
+                    <p>Every year about <span class="imp-text">18m hectares of forest – an area the size of England and Wales</span> – is cleared.</p>
+                </div>
+            </div>
+    </section>
+    
+    
     <div class="footer-bottom">
         <div class="footer-bottom-content">
             <p>Copyright © 2021.Jiacheng Han FIT3179.<span class="text-primary"> Data Visualisation 2</span></p>
