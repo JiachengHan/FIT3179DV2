@@ -4,7 +4,7 @@
     "width": "container",
     "height": 500,
     "layer": [{
-            "data": { "url": "https://raw.githubusercontent.com/JiachengHan/tt/main/js/population_total.csv" },
+            "data": { "url": "data/population/population_total.csv" },
             "mark": {
                 "type": "bar",
                 "tooltip": true
@@ -30,7 +30,7 @@
 
         },
         {
-            "data": { "url": "https://raw.githubusercontent.com/JiachengHan/tt/main/js/CleanedGlobalLandTemperaturesByCountry.csv" },
+            "data": { "url": "data/population/CleanedGlobalLandTemperaturesByCountry.csv" },
             "mark": {
                 "type": "line",
                 "tooltip": true,
