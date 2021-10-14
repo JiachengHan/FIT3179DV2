@@ -151,6 +151,15 @@ body {
     z-index: -10;
 }
 
+#section3 {
+    background-image: url(img/forest.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1000px;
+}
+
 
 /* 图像部分 */
 
@@ -220,6 +229,19 @@ body {
     line-height: 33px;
     color: white;
 }
+
+.card-right h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.card-right p {
+    font-size: 22px;
+    line-height: 25px;
+    color: white;
+}
+
 
 .row:after {
     content: "";
