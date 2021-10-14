@@ -81,6 +81,18 @@
                         "text": "Total Population:",
                         "color": "orange"
                     }
+                },
+                {
+                    "mark": {
+                        "fontSize": 20,
+                        "type": "text",
+                        "align": "right",
+                        "baseline":"line-top",
+                        "x":280,
+                        "y": -25,
+                        "text": "Country over 75 Million People:",
+                        "color": "black"
+                    }
                 }
             ]
         }
