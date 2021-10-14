@@ -36,14 +36,14 @@
                     "type": "quantitative",
                     "aggregate": "average",
                     "title": null,
-                    "scale": { "domain": "unaggregated" }
+                    "scale": { "domain": [0,60] }
                 },
                 "y": {
                     "field": "Factor",
                     "type": "nominal",
                     "sort": { "op": "average", "field": "Emission", "order": "descending" },
                     "title": null,
-                    "axis": { "labelFontSize": 15 }
+                    "axis": null
                 },
 
                 "color": {
