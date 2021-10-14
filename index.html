@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualisation 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="#topsection">About</a>
+        <a href="#section1">Population</a>
+        <a href="#section2">Greenhouse Gas</a>
+        <a href="#section3">Forest Area</a>
+        <a href="#section4">Impact </a>
+    </div>
+
+    <div class="header">
+        <video src="img/header.mp4" class="bjimg" autoplay loop muted></video>
+        <h1>Global Warming Analysis</h1>
+    </div>
+
+
+
+    <section id="topsection" class="section-page">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="card-top">
+                        <div id="symbol_map">
+                        </div>
+                        <script type="text/javascript">
+                            var spec2 = "js/changewithtime.vg.json";
+                            vegaEmbed('#symbol_map', spec2, {
+                                "actions": false
+                            }).then(function(result) {
+                                // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                            }).catch(console.error);
+                        </script>
+                    </div>
+                    <div class="card-top">
+                        <h2>Introduction</h2>
+                        <p>As you can see, the color of each geographic region changes obviously when you slide the time slider from 1900 to 2010. According to the research, the average global temperature has increased almost <span class="imp-text">1 degree centigrade</span>                            from 1900.</p>
+                        <p>In this analysis, we will analyze the cause of global Warming from three aspects: <span class="blods">Population, Greenhouse Gan, & Forest Area</span>.</p>
+                        <p>In the end, we will discuss the impact of global warming.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section1" class="section-page">
+        <div class="container">
+            <div class="row">
+                <div class="leftcolumn">
+                    <div class="card-left">
+                        <div id="bar1">
+                        </div>
+                        <script type="text/javascript">
+                            var spec2 = "js/Population.vl.json";
+                            vegaEmbed('#bar1', spec2, {
+                                "actions": false
+                            }).then(function(result) {
+                                // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                            }).catch(console.error);
+                        </script>
+                    </div>
+                </div>
+                <div class="rightcolumn">
+                    <div class="card-right">
+                        <div id="bar2">
+                        </div>
+                        <script type="text/javascript">
+                            var spec2 = "js/pop_temp.vl.json";
+                            vegaEmbed('#bar2', spec2, {
+                                "actions": false
+                            }).then(function(result) {
+                                // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                            }).catch(console.error);
+                        </script>
+                    </div>
+                </div>
+                <div class="card-top">
+                    <h2>Population</h2>
+                    <p>From the left visualisation, it can be seen that <span class="blods">9</span> countries with population of more than 100 million were added.</p>
+                    <p>From the right visualisation, we can see that the total population increased around <span class="imp-text">3.5 billion</span> people. The average temperature increased with the population.</p>
+                    <p>More population means <span class="imp-text">more carbon dioxide, more land occupation, more tree cutting, more ocean fishing, more environmental pollution</span>.</p>
+                    <p>Human has wreaked havoc on the ecological environment which is one of the main reasons of global climate change.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section2" class="section-page">
+        <div class="container">
+            <div class="row">
+                <div class="leftcolumn">
+                    <div class="card-left">
+                        <h2>title2</h2>
+                        <h5> </h5>
+                        <div class="fakeimg" style="height:200px;">image</div>
+                        <p>text...</p>
+                        <p> </p>
+                    </div>
+                </div>
+                <div class="rightcolumn">
+                    <div class="card-right">
+                        <h2>title 2</h2>
+                        <div class="fakeimg" style="height:100px;">image</div>
+                        <p>text..</p>
+                    </div>
+
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <h3>title3</h3>
+                        <p>text...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <p>Copyright © 2021.Jiacheng Han FIT3179.<span class="text-primary"> Data Visualisation 2</span></p>
+        </div>
+    </div>
+
+</body>
+
+</html>
