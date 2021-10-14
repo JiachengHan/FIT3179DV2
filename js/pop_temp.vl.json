@@ -1,0 +1,72 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Population & Average Temperature",
+    "width": "container",
+    "height": 500,
+    "layer": [{
+            "data": { "url": "https://raw.githubusercontent.com/JiachengHan/tt/main/js/population_total.csv" },
+            "mark": {
+                "type": "bar",
+                "tooltip": true
+            },
+            "encoding": {
+                "color": { "value": "lightgrey" },
+                "x": {
+                    "title": "Year ",
+                    "timeUnit": "year",
+                    "field": "Year",
+                    "axis": {
+                        "labelAlign": "left",
+                        "labelExpr": "datum.label"
+                    }
+                },
+                "y": {
+                    "aggregate": "sum",
+                    "field": "Population",
+                    "title": "Population",
+                    "axis": { "labelExpr": "datum.label", "titleColor": "gray", "labelColor": "gray", "format": "" }
+                }
+            }
+
+        },
+        {
+            "data": { "url": "https://raw.githubusercontent.com/JiachengHan/tt/main/js/CleanedGlobalLandTemperaturesByCountry.csv" },
+            "mark": {
+                "type": "line",
+                "tooltip": true,
+                "color": "blueviolet",
+                "clip": true,
+                "size": 3
+            },
+
+            "encoding": {
+                "x": {
+                    "title": "Year ",
+                    "scale": { "domain": [1960, 2020] },
+                    "timeUnit": "year",
+                    "field": "dt",
+                    "axis": {
+                        "labelAlign": "left",
+                        "labelExpr": "datum.label"
+                    }
+                },
+                "y": {
+                    "aggregate": "mean",
+                    "field": "Avg Temperature",
+                    "title": "Average Tempture",
+                    "scale": { "domain": [18, 20] },
+                    "axis": { "labelExpr": "datum.label", "titleColor": "blueviolet", "labelColor": "blueviolet" }
+                }
+            }
+        }
+    ],
+    "resolve": { "scale": { "y": "independent" } },
+
+    "config": {
+        "style": {
+            "cell": {
+                "stroke": "transparent"
+            }
+        }
+    }
+}

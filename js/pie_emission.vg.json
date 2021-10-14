@@ -1,0 +1,103 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": 500,
+    "data": {
+        "url": "https://raw.githubusercontent.com/JiachengHan/tt/main/js/emission_VIC_1990_2018.csv"
+    },
+    "transform": [{
+            "window": [{
+                "op": "sum",
+                "field": "Emission",
+                "as": "TotalEmission"
+            }],
+            "frame": [null, null]
+        },
+        {
+            "calculate": "datum.Emission/datum.TotalEmission * 100",
+            "as": "PercentOfTotal"
+        }
+    ],
+    "encoding": {
+
+        "tooltip": [
+            { "field": "Factor", "type": "nominal" },
+            { "field": "Emission", "type": "quantitative", "aggregate": "sum", "title": "Emission Equivalent(Mt)", "format": ".2f" },
+            { "field": "PercentOfTotal", "type": "quantitative", "aggregate": "sum", "title": "Precent of Total", "format": ".2f" }
+        ],
+        "theta": {
+            "field": "PercentOfTotal",
+            "type": "quantitative",
+            "aggregate": "sum",
+            "stack": true
+        },
+        "color": {
+            "scale": {
+                "domain": ["Electricity generation", "Transport", "Direct combustion", "Agriculture", "Waste", "Fugitive emissions from fuel", "Industrial processes and product use"],
+                "range": ["red", "orange", "pink", "darkcyan", "lightblue", "purple", "lightgray"]
+            },
+            "field": "Factor",
+            "type": "nominal",
+            "legend": null
+        }
+    },
+    "layer": [{
+            "mark": {
+                "type": "arc",
+                "outerRadius": 240,
+                "innerRadius": 150
+            }
+        },
+        {
+            "mark": { "type": "text", "radius": 280, "fill": "black", "fontSize": 15 },
+            "encoding": {
+                "text": { "field": "Factor", "type": "nominal" }
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "radius": 200,
+                "fontSize": 18,
+                "fill": "white"
+            },
+            "encoding": {
+                "text": { "field": "PercentOfTotal", "aggregate": "sum", "format": ".2f" }
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "fontSize": 20,
+                "text": "Total Emission",
+                "baseline": "alphabetic",
+                "y": 230,
+                "fill": "black"
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "fontSize": 20,
+                "baseline": "alphabetic",
+                "y": 255,
+                "fill": "black"
+            },
+            "encoding": {
+                "text": { "field": "TotalEmission", "type": "quantitative" }
+
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "fontSize": 20,
+                "fontWeight": "lighter",
+                "baseline": "alphabetic",
+                "y": 280,
+                "text": "Mt",
+                "fill": "black"
+            }
+        }
+    ]
+}

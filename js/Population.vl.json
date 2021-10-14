@@ -1,0 +1,91 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": 500,
+    "params": [{
+        "name": "Year_selection",
+        "value": 1960,
+        "bind": {
+            "input": "range",
+            "min": 1960,
+            "max": 2017,
+            "step": 1,
+            "name": "Year:"
+        }
+    }],
+    "layer": [{
+            "data": { "url": "https://raw.githubusercontent.com/JiachengHan/tt/main/js/population_total.csv" },
+            "transform": [
+                { "filter": "datum.Year==Year_selection" },
+                { "filter": "datum.Population > 75000000" },
+                {
+                    "window": [{ "op": "rank", "as": "rank" }],
+                    "sort": [{ "field": "Population", "order": "descending" }]
+                },
+                { "filter": "(datum.rank <= 50)" }
+            ],
+            "encoding": {
+                "y": {
+                    "sort": { "field": "Population", "op": "sum", "order": "descending" },
+                    "field": "Country",
+                    "type": "nominal",
+                    "axis": null
+                }
+            },
+            "layer": [{
+                    "mark": { "type": "bar", "color": "gray", "tooltip": true },
+                    "encoding": {
+                        "x": {
+                            "aggregate": "sum",
+                            "field": "Population",
+                            "title": "Population"
+                        }
+                    }
+                },
+                {
+                    "mark": { "type": "text", "align": "left", "x": 5 },
+                    "encoding": {
+                        "text": { "field": "Country" }
+                    }
+                }
+            ]
+        },
+        {
+            "data": {
+                "url": "https://raw.githubusercontent.com/JiachengHan/tt/main/js/population_total.csv"
+            },
+            "layer": [{
+                    "mark": {
+                        "fontSize": 18,
+                        "type": "text",
+                        "align": "right",
+                        "baseline": "alphabetic",
+                        "x": "width",
+                        "y": -5,
+                        "color": "orange"
+                    },
+                    "encoding": {
+                        "text": { "field": "Population", "aggregate": "sum", "format": "," }
+                    },
+                    "transform": [{ "filter": "datum.Year==Year_selection" }]
+
+                },
+                {
+                    "mark": {
+                        "fontSize": 18,
+                        "type": "text",
+                        "align": "right",
+                        "baseline": "alphabetic",
+                        "x": "width",
+                        "y": -25,
+                        "text": "Total Population:",
+                        "color": "orange"
+                    }
+                }
+            ]
+        }
+    ],
+    "config": {
+        "style": { "cell": { "stroke": "transparent" } }
+    }
+}
