@@ -9,7 +9,7 @@ body {
 }
 
 
-/* Header */
+/* 头部标题 */
 
 .header {
     padding: 30px;
@@ -36,7 +36,8 @@ body {
     object-fit: cover;
 }
 
-/* Navigator */
+
+/* 导航条 */
 
 .topnav {
     position: fixed;
@@ -48,6 +49,9 @@ body {
     background-color: #333;
     z-index: 10;
 }
+
+
+/* 导航条链接 */
 
 .topnav a {
     width: 20%;
@@ -62,10 +66,16 @@ body {
     font-weight: bold;
 }
 
+
+/* 链接颜色修改 */
+
 .topnav a:hover {
     background-color: #ddd;
     color: black;
 }
+
+
+/* 创建两列 */
 
 
 /* Left column */
@@ -76,7 +86,7 @@ body {
 }
 
 
-/* Right column */
+/* 右侧栏 */
 
 .rightcolumn {
     float: left;
@@ -88,6 +98,7 @@ body {
     float: left;
     width: 100%;
 }
+
 
 /*Section*/
 
@@ -132,7 +143,6 @@ body {
     background-repeat: no-repeat;
     width: 100%;
     height: 1000px;
-    z-index: -10;
 }
 
 .section-page {
@@ -148,7 +158,6 @@ body {
     background-repeat: no-repeat;
     width: 100%;
     height: 1000px;
-    z-index: -10;
 }
 
 #section3 {
@@ -170,52 +179,41 @@ body {
 }
 
 
-/* Card */
+/* 文章卡片效果 */
 
 .card-left {
     background-color: white;
-    height: 550px;
     padding: 20px;
     margin-top: 20px;
-    z-index: -2;
+}
+
+.card-left-down {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 .card-right {
     background-color: white;
-    height: 550px;
     padding: 20px;
     margin-top: 20px;
-    z-index: -2;
 }
 
 .card {
     background-color: white;
     padding: 20px;
     margin-top: 20px;
-    height: 550px;
+    height: 450px;
     text-align: center;
     position: relative;
     display: block;
-    z-index: -2;
 }
 
 .card-top {
     width: 100%;
-    height: 550px;
     text-align: center;
     position: relative;
     display: block;
-   
-}
-
-.card-top-vis {
-    background-colorr:white;
-    height: 550px;
-    width: 100%;
-    text-align: center;
-    position: relative;
-    display: block;
-   
 }
 
 .card-top h2 {
@@ -230,18 +228,25 @@ body {
     color: white;
 }
 
-.card-right h2 {
+.card-right-tran {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card-right-tran h2 {
     font-size: 40px;
     font-weight: bold;
     color: white;
 }
 
-.card-right p {
-    font-size: 22px;
-    line-height: 25px;
+.card-right-tran p {
+    font-size: 18px;
+    line-height: 18px;
     color: white;
 }
 
+
+/* 列后面清除浮动 */
 
 .row:after {
     content: "";
@@ -250,7 +255,7 @@ body {
 }
 
 
-/* footer */
+/* 底部 */
 
 .footer {
     padding: 20px;
@@ -278,6 +283,9 @@ body {
     color: #bbff00!important;
 }
 
+
+/* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+
 @media screen and (max-width: 800px) {
     .leftcolumn,
     .rightcolumn {
@@ -285,6 +293,9 @@ body {
         padding: 0;
     }
 }
+
+
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
 
 @media screen and (max-width: 400px) {
     .topnav a {
@@ -297,24 +308,26 @@ body {
     position: relative;
     display: block;
     width: 100%;
-    height: 480px;
-    z-index: 5;
+    height: 500px;
+    z-index: -1;
+    /*height: 1000px;
+	width: 800px;*/
 }
 
 #bar1 {
     position: relative;
     display: block;
     width: 100%;
-    height: 480px;
-    z-index: 5;
+    height: 500px;
+    z-index: -1;
 }
 
 #bar2 {
     position: relative;
     display: block;
     width: 100%;
-    height: 480px;
-    z-index: 5;
+    height: 500px;
+    z-index: -1;
 }
 
 #bar3 {
@@ -329,7 +342,7 @@ body {
     position: relative;
     display: block;
     width: 100%;
-    height: 480px;
+    height: 300px;
     z-index: 5;
 }
 
@@ -348,9 +361,6 @@ body {
     height: 480px;
     z-index: 5;
 }
-
-
-
 
 .imp-text {
     color: red;
