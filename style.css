@@ -202,6 +202,16 @@ body {
     text-align: center;
     position: relative;
     display: block;
+    z-index:-2;
+}
+
+.card-top-vis {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: block;
+    z-index:-2;
 }
 
 .card-top h2 {
