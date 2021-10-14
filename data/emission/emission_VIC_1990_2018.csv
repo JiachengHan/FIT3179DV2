@@ -1,0 +1,204 @@
+﻿Factor,Year,Emission
+Waste,1990,5.416353328
+Waste,1991,5.350399984
+Waste,1992,5.28763891
+Waste,1993,5.223338005
+Waste,1994,4.9802932
+Waste,1995,4.970544202
+Waste,1996,4.345117666
+Waste,1997,4.28359598
+Waste,1998,3.979955591
+Waste,1999,4.089939428
+Waste,2000,3.669894973
+Waste,2001,3.736467463
+Waste,2002,3.96530299
+Waste,2003,3.963155499
+Waste,2004,3.922098422
+Waste,2005,3.916935886
+Waste,2006,3.897370703
+Waste,2007,3.80652541
+Waste,2008,3.75783152
+Waste,2009,3.755318693
+Waste,2010,3.76254703
+Waste,2011,3.274100531
+Waste,2012,2.750226176
+Waste,2013,2.105896457
+Waste,2014,2.187233415
+Waste,2015,2.582826967
+Waste,2016,2.605522325
+Waste,2017,2.795114632
+Waste,2018,2.586445695
+Agriculture,1990,15.70217749
+Agriculture,1991,15.36251091
+Agriculture,1992,15.02548185
+Agriculture,1993,14.67731271
+Agriculture,1994,15.24451735
+Agriculture,1995,14.87698577
+Agriculture,1996,15.41391534
+Agriculture,1997,15.65086368
+Agriculture,1998,15.03138909
+Agriculture,1999,15.24742579
+Agriculture,2000,16.27743087
+Agriculture,2001,16.61054724
+Agriculture,2002,16.70230821
+Agriculture,2003,15.89606238
+Agriculture,2004,15.97649112
+Agriculture,2005,16.80772025
+Agriculture,2006,15.91096239
+Agriculture,2007,15.06909016
+Agriculture,2008,14.3389411
+Agriculture,2009,13.97948714
+Agriculture,2010,13.93241847
+Agriculture,2011,14.61614179
+Agriculture,2012,15.41241463
+Agriculture,2013,15.18640304
+Agriculture,2014,15.38524121
+Agriculture,2015,15.13825147
+Agriculture,2016,14.17697259
+Agriculture,2017,15.37977287
+Agriculture,2018,15.68456078
+Industrial processes and product use,1990,2.705040195
+Industrial processes and product use,1991,2.681763537
+Industrial processes and product use,1992,2.642774982
+Industrial processes and product use,1993,2.453720934
+Industrial processes and product use,1994,1.987163253
+Industrial processes and product use,1995,1.824853301
+Industrial processes and product use,1996,1.70607072
+Industrial processes and product use,1997,1.719736999
+Industrial processes and product use,1998,2.023442134
+Industrial processes and product use,1999,1.995426144
+Industrial processes and product use,2000,2.114926938
+Industrial processes and product use,2001,2.468024332
+Industrial processes and product use,2002,2.639464495
+Industrial processes and product use,2003,2.827600796
+Industrial processes and product use,2004,2.994575181
+Industrial processes and product use,2005,3.186677773
+Industrial processes and product use,2006,2.941047306
+Industrial processes and product use,2007,3.19977186
+Industrial processes and product use,2008,3.355358424
+Industrial processes and product use,2009,3.69929014
+Industrial processes and product use,2010,3.784104857
+Industrial processes and product use,2011,3.9890625
+Industrial processes and product use,2012,3.895709409
+Industrial processes and product use,2013,3.842261819
+Industrial processes and product use,2014,3.820574755
+Industrial processes and product use,2015,3.789108235
+Industrial processes and product use,2016,3.809844618
+Industrial processes and product use,2017,3.64969512
+Industrial processes and product use,2018,3.855630033
+Fugitive emissions from fuel,1990,3.80094313
+Fugitive emissions from fuel,1991,3.458504269
+Fugitive emissions from fuel,1992,3.595413102
+Fugitive emissions from fuel,1993,3.601419989
+Fugitive emissions from fuel,1994,3.237659663
+Fugitive emissions from fuel,1995,3.944723715
+Fugitive emissions from fuel,1996,3.556286739
+Fugitive emissions from fuel,1997,3.309592673
+Fugitive emissions from fuel,1998,2.902685085
+Fugitive emissions from fuel,1999,2.519101082
+Fugitive emissions from fuel,2000,2.970760533
+Fugitive emissions from fuel,2001,2.875500184
+Fugitive emissions from fuel,2002,2.557087599
+Fugitive emissions from fuel,2003,2.218688732
+Fugitive emissions from fuel,2004,2.51048998
+Fugitive emissions from fuel,2005,2.432446585
+Fugitive emissions from fuel,2006,2.292891561
+Fugitive emissions from fuel,2007,2.353718887
+Fugitive emissions from fuel,2008,2.646659383
+Fugitive emissions from fuel,2009,3.033199368
+Fugitive emissions from fuel,2010,2.60513037
+Fugitive emissions from fuel,2011,2.450172018
+Fugitive emissions from fuel,2012,2.705038834
+Fugitive emissions from fuel,2013,2.819461686
+Fugitive emissions from fuel,2014,2.569531147
+Fugitive emissions from fuel,2015,2.514601949
+Fugitive emissions from fuel,2016,3.257696955
+Fugitive emissions from fuel,2017,3.423429721
+Fugitive emissions from fuel,2018,3.869216566
+Transport,1990,15.91015872
+Transport,1991,15.55024506
+Transport,1992,15.83508411
+Transport,1993,16.04041374
+Transport,1994,16.23227409
+Transport,1995,16.66014937
+Transport,1996,17.12754748
+Transport,1997,17.57089755
+Transport,1998,17.5509571
+Transport,1999,17.81825321
+Transport,2000,18.15018713
+Transport,2001,18.07409379
+Transport,2002,18.54875245
+Transport,2003,19.39315673
+Transport,2004,20.10933293
+Transport,2005,20.24098303
+Transport,2006,20.48620613
+Transport,2007,20.77395309
+Transport,2008,20.90541879
+Transport,2009,21.05404487
+Transport,2010,21.42342765
+Transport,2011,22.26371703
+Transport,2012,21.82553922
+Transport,2013,21.69820978
+Transport,2014,22.46310029
+Transport,2015,22.75585446
+Transport,2016,22.22013552
+Transport,2017,22.72679859
+Transport,2018,23.45092686
+Direct combustion,1990,15.20237863
+Direct combustion,1991,15.20047998
+Direct combustion,1992,15.21344451
+Direct combustion,1993,15.59611822
+Direct combustion,1994,15.41777644
+Direct combustion,1995,15.89647776
+Direct combustion,1996,16.47419076
+Direct combustion,1997,16.16099748
+Direct combustion,1998,16.55906141
+Direct combustion,1999,15.97437366
+Direct combustion,2000,16.309019
+Direct combustion,2001,16.5258984
+Direct combustion,2002,16.43187498
+Direct combustion,2003,17.65732688
+Direct combustion,2004,18.46127739
+Direct combustion,2005,18.43297447
+Direct combustion,2006,17.70954691
+Direct combustion,2007,17.1471579
+Direct combustion,2008,17.49291307
+Direct combustion,2009,17.96648279
+Direct combustion,2010,17.80106163
+Direct combustion,2011,18.40546331
+Direct combustion,2012,18.81668405
+Direct combustion,2013,18.65154118
+Direct combustion,2014,18.76144224
+Direct combustion,2015,18.25091649
+Direct combustion,2016,18.07602618
+Direct combustion,2017,17.6267724
+Direct combustion,2018,17.73379861
+Electricity generation,1990,44.19842
+Electricity generation,1991,46.30578
+Electricity generation,1992,47.5241
+Electricity generation,1993,45.33357
+Electricity generation,1994,45.46883
+Electricity generation,1995,47.82414
+Electricity generation,1996,49.88438
+Electricity generation,1997,52.56058
+Electricity generation,1998,59.19032
+Electricity generation,1999,61.78771
+Electricity generation,2000,62.65138
+Electricity generation,2001,62.22967
+Electricity generation,2002,60.38296
+Electricity generation,2003,61.49591
+Electricity generation,2004,64.70376
+Electricity generation,2005,63.52306
+Electricity generation,2006,64.34614
+Electricity generation,2007,63.27053
+Electricity generation,2008,63.71462
+Electricity generation,2009,65.61346
+Electricity generation,2010,65.28446
+Electricity generation,2011,64.38628
+Electricity generation,2012,66.69002
+Electricity generation,2013,58.95679
+Electricity generation,2014,56.96172
+Electricity generation,2015,61.07478
+Electricity generation,2016,59.23063
+Electricity generation,2017,56.0874
+Electricity generation,2018,46.44366
