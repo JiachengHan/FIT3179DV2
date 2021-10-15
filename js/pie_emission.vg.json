@@ -70,8 +70,8 @@
         {
             "mark": {
                 "type": "text",
-                "radius": 180,
-                "fontSize": 18,
+                "radius": 160,
+                "fontSize": 16,
                 "fill": "white"
             },
             "encoding": {
