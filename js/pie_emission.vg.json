@@ -16,7 +16,7 @@
     },
     "height": "container",
     "data": {
-        "url": "https://raw.githubusercontent.com/JiachengHan/tt/main/js/emission_VIC_1990_2018.csv"
+        "url": "data/emission/emission_VIC_1990_2018.csv"
     },
     "transform": [{
             "window": [{
