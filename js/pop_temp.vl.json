@@ -27,7 +27,7 @@
                 },
                 "tooltips": [
                     {"field":"Year","type":"ordinal","timeUnit":"year","title":"Year"},
-                    {"field":"Population","type":"quantitative","title":"Population"}
+                    {"field":"Population","type":"quantitative","aggregate": "sum","format":",","title":"Population"}
                 ]
             }
 
@@ -61,7 +61,7 @@
                 },
                 "tooltips": [
                     {"field":"Year","type":"ordinal","timeUnit":"year","title":"Year"},
-                    {"field":"Avg Temperature","type":"quantitative","format":".2f","title":"Average Temperature"}
+                    {"field":"Avg Temperature","type":"quantitative","aggregate": "mean","format":".2f","title":"Average Temperature"}
                 ]
             }
         }
