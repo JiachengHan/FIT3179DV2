@@ -165,31 +165,33 @@
                         </script>
                     </div>
                 </div>
-            </div>
-            <div class="leftcolumn">
-                <div class="card-left-down">
-                    <div id="bar4">
+            
+                <div class="leftcolumn">
+                    <div class="card-left-down">
+                        <div id="bar4">
+                        </div>
+                        <script type="text/javascript">
+                            var spec2 = "js/forest_area.vg.json";
+                            vegaEmbed('#bar4', spec2, {
+                                "actions": false
+                            }).then(function(result) {
+                                // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                            }).catch(console.error);
+                        </script>
                     </div>
-                    <script type="text/javascript">
-                        var spec2 = "js/forest_area.vg.json";
-                        vegaEmbed('#bar4', spec2, {
-                            "actions": false
-                        }).then(function(result) {
-                            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-                        }).catch(console.error);
-                    </script>
+                </div>
+                <div class="rightcolumn">
+                    <div class="card-right-tran">
+                        <h2>Forest Area</h2>
+                        <p>Through the map above, we can see that the percentage of forest area cover is obviously decrease in some country.</p>
+                        <p>According to the research, deforestation is in fact considered the second major driver of climate change (more than the entire global transport sector), responsible for <span class="yel-text">18-25%</span> of global annual carbon dioxide
+                            emissions.
+                        </p>
+                        <p>Every year about <span class="yel-text">18m hectares of forest – an area the size of England and Wales</span> – is cleared.</p>
+                    </div>
                 </div>
             </div>
-            <div class="rightcolumn">
-                <div class="card-right-tran">
-                    <h2>Forest Area</h2>
-                    <p>Through the map above, we can see that the percentage of forest area cover is obviously decrease in some country.</p>
-                    <p>According to the research, deforestation is in fact considered the second major driver of climate change (more than the entire global transport sector), responsible for <span class="yel-text">18-25%</span> of global annual carbon dioxide
-                        emissions.
-                    </p>
-                    <p>Every year about <span class="yel-text">18m hectares of forest – an area the size of England and Wales</span> – is cleared.</p>
-                </div>
-            </div>
+        </div>
     </section>
     
     <section id="section4" class="section-page">
