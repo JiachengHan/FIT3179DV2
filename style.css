@@ -177,29 +177,29 @@ body {
 
 /* card */
 .card-top-left {
-    height:440px;
-    padding: 40px;
+    height:435px;
+    padding: 30px;
     margin-top: 20px;
     z-index: -2;
 }
 
 .card-top-right {
-    height:440px;
-    padding: 40px;
+    height:435px;
+    padding: 30px;
     margin-top: 20px;
     z-index: -2;
 }
 
 .card-bottom-left {
-    height:440px;
-    padding: 40px;
+    height:435px;
+    padding: 30px;
     margin-top: 20px;
     z-index: -2;
 }
 
 .card-bottom-right {
-    height:440px;
-    padding: 40px;
+    height:435px;
+    padding: 30px;
     margin-top: 20px;
     z-index: -2;
 }
@@ -208,8 +208,9 @@ body {
 .card-top-right h3,
 .card-bottom-left h3,
 .card-bottom-right h3 {
-    font-size: 32px;
+    font-size: 34px;
     font-weight: bold;
+    font-style: italic;
     color: white;
 }
 
