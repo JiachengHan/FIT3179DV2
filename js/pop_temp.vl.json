@@ -1,6 +1,6 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Population & Average Temperature",
+    "title": {"text":"Population & Average Temperature","fontSize":20},
     "width": "container",
     "height": "container",
     "layer": [{
