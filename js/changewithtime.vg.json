@@ -78,7 +78,7 @@
                         "orient": "none",
                         "direction": "horizontal",
                         "labelFontSize": 12.5,
-                        "title": "Average Temperature"
+                        "title": "Changed Temperature"
                     }
                 },
                 "tooltip": [
