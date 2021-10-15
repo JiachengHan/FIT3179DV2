@@ -6,8 +6,7 @@
     "layer": [{
             "data": { "url": "data/population/population_total.csv" },
             "mark": {
-                "type": "bar",
-                "tooltip": true
+                "type": "bar"
             },
             "encoding": {
                 "color": { "value": "lightgrey" },
@@ -25,7 +24,11 @@
                     "field": "Population",
                     "title": "Population",
                     "axis": { "labelExpr": "datum.label", "titleColor": "gray", "labelColor": "gray", "format": "" }
-                }
+                },
+                "tooltips": [
+                    {"field":"Year","type":"ordinal","timeUnit":"year","title":"Year"},
+                    {"field":"Population","type":"quantitative","title":"Population"}
+                ]
             }
 
         },
@@ -33,7 +36,6 @@
             "data": { "url": "data/population/CleanedGlobalLandTemperaturesByCountry.csv" },
             "mark": {
                 "type": "line",
-                "tooltip": true,
                 "color": "blueviolet",
                 "clip": true,
                 "size": 3
@@ -56,7 +58,11 @@
                     "title": "Average Tempture",
                     "scale": { "domain": [18, 20] },
                     "axis": { "labelExpr": "datum.label", "titleColor": "blueviolet", "labelColor": "blueviolet" }
-                }
+                },
+                "tooltips": [
+                    {"field":"Year","type":"ordinal","timeUnit":"year","title":"Year"},
+                    {"field":"Avg Temperature","type":"quantitative","format":".2f","title":"Average Temperature"}
+                ]
             }
         }
     ],
