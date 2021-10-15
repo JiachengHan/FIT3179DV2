@@ -163,7 +163,58 @@ body {
     z-index:-10;
 }
 
+#section4 {
+    background-image: url(img/impact.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1000px;
+    z-index: -10;
+}
+
 /* card */
+.card-top-left {
+    padding: 40px;
+    margin-top: 20px;
+    z-index: -2;
+}
+
+.card-top-right {
+    padding: 40px;
+    margin-top: 20px;
+    z-index: -2;
+}
+
+.card-bottom-left {
+    padding: 40px;
+    margin-top: 20px;
+    z-index: -2;
+}
+
+.card-bottom-right {
+    padding: 40px;
+    margin-top: 20px;
+    z-index: -2;
+}
+
+.card-top-left h3,
+.card-top-right h3,
+.card-bottom-left h3,
+.card-bottom-right h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.card-top-left p,
+.card-top-right p,
+.card-bottom-left p,
+.card-bottom-right p {
+    font-size: 20px;
+    line-height: 22px;
+    color: white;
+}
 
 .card-left {
     background-color: white;
@@ -187,14 +238,18 @@ body {
 }
 
 .card {
-    background-color: white;
     padding: 20px;
     margin-top: 20px;
-    height: 450px;
     text-align: center;
     position: relative;
     display: block;
-    z-index:-2;
+}
+
+.card h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
 }
 
 .card-top {
@@ -352,6 +407,11 @@ body {
 
 .imp-text {
     color: red;
+    font-weight: bold;
+}
+
+.yel-text {
+    color: yellow;
     font-weight: bold;
 }
 
