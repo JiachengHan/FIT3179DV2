@@ -60,7 +60,7 @@
                     "axis": { "labelExpr": "datum.label", "titleColor": "blueviolet", "labelColor": "blueviolet" }
                 },
                 "tooltips": [
-                    {"field":"Year","type":"ordinal","timeUnit":"year","title":"Year"},
+                    {"field":"dt","type":"ordinal","timeUnit":"year","title":"Year"},
                     {"field":"Avg Temperature","type":"quantitative","aggregate": "mean","format":".2f","title":"Average Temperature"}
                 ]
             }
