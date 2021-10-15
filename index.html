@@ -151,17 +151,19 @@
     <section id="section3" class="section-page">
         <div class="container">
             <div class="row">
-                <div class="card-top-vis">
-                    <div id="map2">
+                <div class="column">
+                    <div class="card-top-vis">
+                        <div id="map2">
+                        </div>
+                        <script type="text/javascript">
+                            var spec2 = "js/forest_cover.vg.json";
+                            vegaEmbed('#map2', spec2, {
+                                "actions": false
+                            }).then(function(result) {
+                                // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+                            }).catch(console.error);
+                        </script>
                     </div>
-                    <script type="text/javascript">
-                        var spec2 = "js/forest_cover.vg.json";
-                        vegaEmbed('#map2', spec2, {
-                            "actions": false
-                        }).then(function(result) {
-                            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-                        }).catch(console.error);
-                    </script>
                 </div>
             </div>
         </div>
@@ -242,7 +244,7 @@
     
     <section id="section4" class="section-page">
         <div class="container">
-            <div class="card">
+            <div class="card-top">
                 <h2>Impact</h2>
             </div>
             <div class="row">
