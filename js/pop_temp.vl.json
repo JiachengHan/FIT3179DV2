@@ -25,7 +25,7 @@
                     "title": "Population",
                     "axis": { "labelExpr": "datum.label", "titleColor": "gray", "labelColor": "gray", "format": "" }
                 },
-                "tooltips": [
+                "tooltip": [
                     {"field":"Year","type":"ordinal","timeUnit":"year","title":"Year"},
                     {"field":"Population","type":"quantitative","aggregate": "sum","format":",","title":"Population"}
                 ]
@@ -59,7 +59,7 @@
                     "scale": { "domain": [18, 20] },
                     "axis": { "labelExpr": "datum.label", "titleColor": "blueviolet", "labelColor": "blueviolet" }
                 },
-                "tooltips": [
+                "tooltip": [
                     {"field":"dt","type":"ordinal","timeUnit":"year","title":"Year"},
                     {"field":"Avg Temperature","type":"quantitative","aggregate": "mean","format":".2f","title":"Average Temperature"}
                 ]
