@@ -177,24 +177,28 @@ body {
 
 /* card */
 .card-top-left {
+    height:450px;
     padding: 40px;
     margin-top: 20px;
     z-index: -2;
 }
 
 .card-top-right {
+    height:450px;
     padding: 40px;
     margin-top: 20px;
     z-index: -2;
 }
 
 .card-bottom-left {
+    height:450px;
     padding: 40px;
     margin-top: 20px;
     z-index: -2;
 }
 
 .card-bottom-right {
+    height:450px;
     padding: 40px;
     margin-top: 20px;
     z-index: -2;
