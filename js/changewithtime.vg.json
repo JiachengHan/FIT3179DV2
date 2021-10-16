@@ -98,7 +98,7 @@
                         "font":"Segoe Print",
                         "fontWeight":"lighter",
                         "fontSize":20,
-                        "text":["The temperatures in 1900","are set as the beginning","which are 0s"],
+                        "text":["The temperatures in 1900","are set as the beginning","which are zeros"],
                         "x":250,
                         "y":250,
                         "align":"center"
