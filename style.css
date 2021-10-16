@@ -333,6 +333,14 @@ body {
     text-align: center;
 }
 
+.footer-bottom-content a {
+    
+    color: blue;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 0;
+}
+
 .footer-bottom-content p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: 0;
