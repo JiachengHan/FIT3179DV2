@@ -1,102 +1,117 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": { "url": "data/forest/forest-area-primary-planted_area.csv" },
     "width": "container",
     "height": "container",
-    "title": {"text":"Forest Area by Type","fontSize":20},
-    "params": [{
-        "name": "Region_selection",
-        "bind": {
-            "input": "select",
-            "options": [
-
-                null,
-                "Northern America",
-                "South America",
-                "Europe",
-                "Africa",
-                "Asia",
-                "Oceania"
-            ],
-            "labels": [
-                "Show All",
-                "North America",
-                "South America",
-                "Europe",
-                "Africa",
-                "Asia",
-                "Oceania"
-            ],
-            "name": "Region: "
+    "title":{
+      "text":"Emission Equivalent Distribution in VIC",
+      "fontSize":20,
+      "fontWeight":"bolder",
+      "color":"white"
+    },
+    "config": {
+        "style": {
+            "cell": {
+                "stroke": "transparent"
+            }
+        },"background":null
+    },
+    "data": {
+        "url": "data/emission/emission_VIC_1990_2018.csv"
+    },
+    "transform": [{
+            "window": [{
+                "op": "sum",
+                "field": "Emission",
+                "as": "TotalEmission"
+            }],
+            "frame": [null, null]
+        },
+        {
+            "calculate": "datum.Emission/datum.TotalEmission * 100",
+            "as": "PercentOfTotal"
         }
-    }],
-    "transform": [{ "filter": "Region_selection == null || datum.Entity == Region_selection" }],
+    ],
     "encoding": {
-        "x": {
-            "timeUnit": "year",
-            "field": "Year",
-            "axis": { "domain": false, "format": "%Y" },
-            "title": "Year"
+
+        "tooltip": [
+            { "field": "Factor", "type": "nominal" },
+            { "field": "Emission", "type": "quantitative", "aggregate": "sum", "title": "Emission Equivalent(Mt)", "format": ".2f" },
+            { "field": "PercentOfTotal", "type": "quantitative", "aggregate": "sum", "title": "Precent of Total", "format": ".2f" }
+        ],
+        "theta": {
+            "field": "PercentOfTotal",
+            "type": "quantitative",
+            "aggregate": "sum",
+            "stack": true
+        },
+        "color": {
+            "scale": {
+                "domain": ["Electricity generation", "Transport", "Direct combustion", "Agriculture", "Waste", "Fugitive emissions from fuel", "Industrial processes and product use"],
+                "range": ["red", "orange", "pink", "darkcyan", "lightblue", "purple", "lightgray"]
+            },
+            "field": "Factor",
+            "type": "nominal",
+            "legend": {
+                "offset":0,
+                "orient":"top-right",
+                "title":null,
+                "labelColor":"white",
+                "labelFontSize":15,
+                "labelExpr": "{'Electricity generation': 'Electricity generation', 'Transport': 'Transport', 'Direct combustion': 'Direct combustion','Agriculture':'Agriculture','Waste':'Waste','Fugitive emissions from fuel':'Fugitive emissions','Industrial processes and product use':'Industrial processes'}[datum.label]"
+            }
         }
     },
     "layer": [{
-            "mark": { "type": "area" },
-            "encoding": {
-                "x": {
-                    "timeUnit": "year",
-                    "field": "Year",
-                    "axis": { "domain": false, "format": "%Y" },
-                    "title": "Year"
-                },
-                "y": {
-                    "aggregate": "sum",
-                    "field": "hectaras",
-                    "type": "quantitative",
-                    "axis": null
-                },
-                "color": {
-                    "field": "Type",
-                    "type": "nominal",
-                    "scale":{
-                        "domain":["Naturally_regenerated_forest","Planted_Forest","Primary_Forest"],
-                        "range":["lightblue","yellow","red"]
-                    },
-                    "legend": {
-                        "direction":"horizontal",
-                        "offset":0,
-                        "orient":"top",
-                        "title":null,
-                        "labelExpr": "{'Naturally_regenerated_forest': 'Naturally Regenerated Forest', 'Planted_Forest': 'Planted Forest', 'Primary_Forest': 'Primary Forest'}[datum.label]"
-                    }
-                }
+            "mark": {
+                "type": "arc",
+                "outerRadius": 200,
+                "innerRadius": 125
             }
         },
         {
-            "transform": [{ "pivot": "Type", "value": "hectaras", "groupby": ["Year"] }],
-            "mark": "rule",
-            "params": [{
-                "name": "line_select",
-                "select": {
-                    "type": "point",
-                    "fields": ["Year"],
-                    "nearest": true,
-                    "on": "mouseover",
-                    "clear": "mouseout"
-                }
-            }],
+            "mark": {
+                "type": "text",
+                "radius": 160,
+                "fontSize": 16,
+                "fill": "white"
+            },
             "encoding": {
-                "opacity": {
-                    "condition": { "value": 0.3, "param": "line_select", "empty": false },
-                    "value": 0
-                },
-                "tooltip": [
-                    { "field": "Year", "timeUnit": "year", "type": "ordinal", "title": "Year" },
-                    { "field": "Naturally_regenerated_forest", "type": "quantitative", "format": ",", "title": "Naturally Regenerated Forest(Hectares)" },
-                    { "field": "Planted_Forest", "type": "quantitative", "format": ",", "title": "Planted Forest(Hectares)" },
-                    { "field": "Primary_Forest", "type": "quantitative", "format": ",", "title": "Primary Forest(Hectares)" }
-                ]
+                "text": { "field": "PercentOfTotal", "aggregate": "sum", "format": ".2f" }
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "fontSize": 20,
+                "text": "Total Emission",
+                "baseline": "alphabetic",
+                "y": 230,
+                "fill": "white"
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "fontSize": 20,
+                "baseline": "alphabetic",
+                "y": 255,
+                "fill": "white"
+            },
+            "encoding": {
+                "text": { "field": "TotalEmission", "type": "quantitative" }
+
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "fontSize": 20,
+                "fontWeight": "lighter",
+                "baseline": "alphabetic",
+                "y": 280,
+                "text": "Mt",
+                "fill": "white"
             }
         }
     ]
-
 }
