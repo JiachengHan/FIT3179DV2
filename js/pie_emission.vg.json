@@ -5,7 +5,8 @@
     "title":{
       "text":"Emission Equivalent Distribution in VIC",
       "fontSize":20,
-      "fontWeight":"bolder"
+      "fontWeight":"bolder",
+      "color":"white"
     },
     "config": {
         "style": {
@@ -64,7 +65,16 @@
         {
             "mark": { "type": "text", "radius": 220, "fill": "black", "fontSize": 15 },
             "encoding": {
-                "text": { "field": "Factor", "type": "nominal" }
+                "text": { "field": "Factor", "type": "nominal" },
+                "color": {
+                    "scale": {
+                        "domain": ["Electricity generation", "Transport", "Direct combustion", "Agriculture", "Waste", "Fugitive emissions from fuel", "Industrial processes and product use"],
+                        "range": ["white"]
+                    },
+                    "field": "Factor",
+                    "type": "nominal",
+                    "legend": null
+                }
             }
         },
         {
@@ -85,7 +95,7 @@
                 "text": "Total Emission",
                 "baseline": "alphabetic",
                 "y": 230,
-                "fill": "black"
+                "fill": "white"
             }
         },
         {
@@ -94,7 +104,7 @@
                 "fontSize": 20,
                 "baseline": "alphabetic",
                 "y": 255,
-                "fill": "black"
+                "fill": "white"
             },
             "encoding": {
                 "text": { "field": "TotalEmission", "type": "quantitative" }
@@ -109,7 +119,7 @@
                 "baseline": "alphabetic",
                 "y": 280,
                 "text": "Mt",
-                "fill": "black"
+                "fill": "white"
             }
         }
     ]
