@@ -100,7 +100,7 @@
                         "fontSize":15,
                         "text":["The temperatures in 1900","are set as the beginning","which are 0s"],
                         "x":0,
-                        "y":"height",
+                        "y":250,
                         "align":"left"
                     }
                 }
