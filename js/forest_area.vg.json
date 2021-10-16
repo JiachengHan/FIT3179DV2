@@ -68,7 +68,7 @@
                 "name": "line_select",
                 "select": {
                     "type": "point",
-                    "fields": ["date"],
+                    "fields": ["Year"],
                     "nearest": true,
                     "on": "mouseover",
                     "clear": "mouseout"
