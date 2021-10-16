@@ -95,7 +95,7 @@
                 "fontSize": 20,
                 "baseline": "alphabetic",
                 "y": 255,
-                "fill": "yellow"
+                "fill": "grey"
             },
             "encoding": {
                 "text": { "field": "TotalEmission", "type": "quantitative" }
