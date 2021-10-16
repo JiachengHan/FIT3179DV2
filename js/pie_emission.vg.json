@@ -13,7 +13,7 @@
             "cell": {
                 "stroke": "transparent"
             }
-        }
+        },"background":null
     },
     "data": {
         "url": "data/emission/emission_VIC_1990_2018.csv"
@@ -51,7 +51,14 @@
             },
             "field": "Factor",
             "type": "nominal",
-            "legend": {}
+            "legend": {
+                "offset":0,
+                "orient":"top-right",
+                "title":null,
+                "labelColor":"black",
+                "labelFontSize":15,
+                "labelExpr": "{'Electricity generation': 'Electricity generation', 'Transport': 'Transport', 'Direct combustion': 'Direct combustion','Agriculture':'Agriculture','Waste':'Waste','Fugitive emissions from fuel':'Fugitive emissions','Industrial processes and product use':'Industrial processes'}[datum.label]"
+            }
         }
     },
     "layer": [{
