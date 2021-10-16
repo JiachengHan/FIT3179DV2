@@ -224,17 +224,10 @@ body {
 }
 
 .card-left {
+    background-color: white;
     padding: 20px;
     margin-top: 20px;
     height:530px;
-    z-index:-2;
-}
-
-.card-left-down-video {
-    background-color: white;
-    height:420px;
-    padding: 20px;
-    margin-top: 20px;
     z-index:-2;
 }
 
@@ -247,6 +240,7 @@ body {
 }
 
 .card-right {
+    background-color: white;
     padding: 20px;
     margin-top: 20px;
     height:530px;
