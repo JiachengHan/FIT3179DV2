@@ -6,14 +6,14 @@
       "text":"Emission Equivalent Distribution in VIC",
       "fontSize":20,
       "fontWeight":"bolder",
-      "color":"white"
+      "color":"black"
     },
     "config": {
         "style": {
             "cell": {
                 "stroke": "transparent"
             }
-        },"background":null
+        }
     },
     "data": {
         "url": "data/emission/emission_VIC_1990_2018.csv"
@@ -51,7 +51,7 @@
             },
             "field": "Factor",
             "type": "nominal",
-            "legend": null
+            "legend": {}
         }
     },
     "layer": [{
@@ -59,13 +59,6 @@
                 "type": "arc",
                 "outerRadius": 200,
                 "innerRadius": 125
-            }
-        },
-        {
-            "mark": { "type": "text", "radius": 220, "fill": "black", "fontSize": 15 },
-            "encoding": {
-                "text": { "field": "Factor", "type": "nominal" },
-                
             }
         },
         {
@@ -86,7 +79,7 @@
                 "text": "Total Emission",
                 "baseline": "alphabetic",
                 "y": 230,
-                "fill": "white"
+                "fill": "black"
             }
         },
         {
@@ -95,7 +88,7 @@
                 "fontSize": 20,
                 "baseline": "alphabetic",
                 "y": 255,
-                "fill": "white"
+                "fill": "yellow"
             },
             "encoding": {
                 "text": { "field": "TotalEmission", "type": "quantitative" }
@@ -110,7 +103,7 @@
                 "baseline": "alphabetic",
                 "y": 280,
                 "text": "Mt",
-                "fill": "white"
+                "fill": "black"
             }
         }
     ]
