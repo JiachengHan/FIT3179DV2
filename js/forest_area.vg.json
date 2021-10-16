@@ -57,7 +57,17 @@
                 "color": {
                     "field": "Type",
                     "type": "nominal",
-                    "legend": null
+                    "scale":{
+                        "domain":["Naturally_regenerated_forest","Planted_Forest","Primary_Forest"],
+                        "range":["lightblue","yellow","red"]
+                    },
+                    "legend": {
+                        "direction":"horizontal",
+                        "offset":0,
+                        "orient":"top",
+                        "title":null,
+                        "labelExpr": "{'Naturally_regenerated_forest': 'Naturally Regenerated Forest', 'Planted_Forest': 'Planted Forest', 'Primary_Forest': 'Primary Forest'}[datum.label]"
+                    }
                 }
             }
         },
