@@ -75,7 +75,7 @@
                         "direction": "horizontal",
                         "labelFontSize": 12.5,
                         "labelExpr": "format(datum.value/100,'0.0p')",
-                        "title": ""
+                        "title": "Cover Percentage"
                     }
                 },
                 "tooltip": [
