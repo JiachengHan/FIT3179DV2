@@ -91,9 +91,9 @@
                 },
                 "tooltip": [
                     { "field": "Year", "timeUnit": "year", "type": "ordinal", "title": "Year" },
-                    { "field": "Naturally_regenerated_forest", "type": "quantitative", "format": ",", "title": "Naturally Regenerated Forest(Hectares)" },
-                    { "field": "Planted_Forest", "type": "quantitative", "format": ",", "title": "Planted Forest(Hectares)" },
-                    { "field": "Primary_Forest", "type": "quantitative", "format": ",", "title": "Primary Forest(Hectares)" }
+                    { "field": "Naturally_regenerated_forest", "type": "quantitative", "format": ".3s", "title": "Naturally Regenerated Forest(Hectares)" },
+                    { "field": "Planted_Forest", "type": "quantitative", "format": ".3s", "title": "Planted Forest(Hectares)" },
+                    { "field": "Primary_Forest", "type": "quantitative", "format": ".3s", "title": "Primary Forest(Hectares)" }
                 ]
             }
         }
