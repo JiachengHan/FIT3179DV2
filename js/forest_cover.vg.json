@@ -26,7 +26,7 @@
     },
     "layer": [{
             "data": {
-                "url": "js/world.json",
+                "url": "https://raw.githubusercontent.com/JiachengHan/FIT3179DV2/main/js/world.json",
                 "format": { "type": "topojson", "feature": "world" }
             },
             "transform": [{
@@ -43,13 +43,13 @@
         },
         {
             "data": {
-                "url": "data/forest/forest-area-as-share-of-land-area_map.csv"
+                "url": "https://raw.githubusercontent.com/JiachengHan/FIT3179DV2/main/data/forest/forest-area-as-share-of-land-area_map.csv"
             },
             "transform": [{
                     "lookup": "Code",
                     "from": {
                         "data": {
-                            "url": "js/world.json",
+                            "url": "https://raw.githubusercontent.com/JiachengHan/FIT3179DV2/main/js/world.json",
                             "format": {
                                 "type": "topojson",
                                 "feature": "world"
@@ -61,23 +61,44 @@
                 },
                 { "filter": "datum.Year == Year_selection" }
             ],
+            "params": [{
+                    "name": "Chooseone",
+                    "select": {
+                        "type": "point",
+                        "fields": ["Entity"],
+                        "on": "mouseover",
+                        "clear": "mouseout"
+                    }
+                }],
             "mark": { "type": "geoshape", "stroke": "#fff", "strokeWidth": 0.5 },
             "encoding": {
                 "shape": { "field": "geo", "type": "geojson" },
                 "color": {
-                    "field": "Forest_cover",
-                    "type": "quantitative",
-                    "bin": true,
-                    "legend": {
-                        "legendY": 0,
-                        "legendX": 5,
-                        "orient": "none",
-                        "direction": "horizontal",
-                        "labelFontSize": 12.5,
-                        "labelExpr": "format(datum.value/100,'0.0p')",
-                        "title": "Cover Percentage"
-                    }
-                },
+                    "condition": {
+                            "param": "Chooseone",
+                            "field":"Forest_cover",
+                            "type":"quantitative",
+                            "bin": true,
+                            "legend": {
+                                "legendY": 0,
+                                "legendX": 5,
+                                "orient": "none",
+                                "direction": "horizontal",
+                                "labelFontSize": 12.5,
+                                "labelExpr": "format(datum.value/100,'0.0p')",
+                                "title": "Cover Percentage"
+                            }
+                        },
+                        "value": "lightgrey"
+                    },
+                    "opacity": {
+                        "condition": {
+                            "param": "Chooseone",
+                            "value": 1
+                        },
+                        "value": 0.2
+                    },
+                
                 "tooltip": [
                     { "field": "Entity", "type": "nominal", "title": "Country" },
                     { "field": "Forest_cover", "type": "quantitative", "title": "Forest Cover Percentage", "format": ".2f" }
