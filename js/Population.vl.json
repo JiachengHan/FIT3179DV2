@@ -42,7 +42,8 @@
                     "select": {
                         "type": "point",
                         "fields": ["Country"],
-                        "on": "mouseover"
+                        "on": "mouseover",
+                        "clear": "mouseout"
                     }
                     }],
                 "mark": { "type": "bar", "color": "gray", "tooltip": true },
