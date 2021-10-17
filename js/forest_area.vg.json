@@ -35,7 +35,7 @@
         "x": {
             "timeUnit": "year",
             "field": "Year",
-            "axis": { "domain": false, "format": "%Y" },
+            "axis": { "domain": false, "format": "%Y","grid":false},
             "title": "Year"
         }
     },
@@ -97,6 +97,9 @@
                 ]
             }
         }
-    ]
+    ],
+    "config": {
+        "style": { "cell": { "stroke": "transparent" } }
+    }
 
 }
