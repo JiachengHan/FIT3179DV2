@@ -16,7 +16,7 @@
         },"background":null
     },
     "data": {
-        "url": "data/emission/emission_VIC_1990_2018.csv"
+        "url": "https://raw.githubusercontent.com/JiachengHan/tt/main/js/emission_VIC_1990_2018.csv"
     },
     "transform": [{
             "window": [{
@@ -27,7 +27,7 @@
             "frame": [null, null]
         },
         {
-            "calculate": "datum.Emission/datum.TotalEmission * 100",
+            "calculate": "datum.Emission/datum.TotalEmission",
             "as": "PercentOfTotal"
         }
     ],
@@ -36,7 +36,7 @@
         "tooltip": [
             { "field": "Factor", "type": "nominal" },
             { "field": "Emission", "type": "quantitative", "aggregate": "sum", "title": "Emission Equivalent(Mt)", "format": ".2f" },
-            { "field": "PercentOfTotal", "type": "quantitative", "aggregate": "sum", "title": "Precent of Total", "format": ".2f" }
+            { "field": "PercentOfTotal", "type": "quantitative", "aggregate": "sum", "title": "Precent of Total", "format": ".2%" }
         ],
         "theta": {
             "field": "PercentOfTotal",
@@ -76,7 +76,7 @@
                 "fill": "white"
             },
             "encoding": {
-                "text": { "field": "PercentOfTotal", "aggregate": "sum", "format": ".2f" }
+                "text": { "field": "PercentOfTotal", "aggregate": "sum", "format": ".2%" }
             }
         },
         {
