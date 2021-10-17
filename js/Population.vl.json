@@ -38,7 +38,6 @@
             "layer": [{
                 "params": [{
                     "name": "Chooseone",
-                    "value": [{"Country": "China"}],
                     "select": {
                         "type": "point",
                         "fields": ["Country"],
