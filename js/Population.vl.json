@@ -16,7 +16,7 @@
     }
     ],
     "layer": [{
-            "data": { "url":"https://raw.githubusercontent.com/JiachengHan/FIT3179DV2/main/data/population/population_total.csv" },
+            "data": { "url":"data/population/population_total.csv" },
             "transform": [
                 { "filter": "datum.Year==Year_selection" },
                 { "filter": "datum.Population > 75000000" },
@@ -84,7 +84,7 @@
         },
         {
             "data": {
-                "url":"https://raw.githubusercontent.com/JiachengHan/FIT3179DV2/main/data/population/population_total.csv"
+                "url":"data/population/population_total.csv"
             },
             "layer": [{
                     "mark": {
