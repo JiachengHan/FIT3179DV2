@@ -1,3 +1,4 @@
+
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": "container",
@@ -26,7 +27,7 @@
     },
     "layer": [{
             "data": {
-                "url": "https://raw.githubusercontent.com/JiachengHan/FIT3179DV2/main/js/world.json",
+                "url": "https://raw.githubusercontent.com/JiachengHan/tt/main/js/world.json",
                 "format": { "type": "topojson", "feature": "world" }
             },
             "transform": [{
@@ -43,13 +44,13 @@
         },
         {
             "data": {
-                "url": "https://raw.githubusercontent.com/JiachengHan/FIT3179DV2/main/data/forest/forest-area-as-share-of-land-area_map.csv"
+                "url": "https://raw.githubusercontent.com/JiachengHan/tt/main/js/forest-area-as-share-of-land-area_map.csv"
             },
             "transform": [{
                     "lookup": "Code",
                     "from": {
                         "data": {
-                            "url": "https://raw.githubusercontent.com/JiachengHan/FIT3179DV2/main/js/world.json",
+                            "url": "https://raw.githubusercontent.com/JiachengHan/tt/main/js/world.json",
                             "format": {
                                 "type": "topojson",
                                 "feature": "world"
@@ -59,7 +60,11 @@
                     },
                     "as": "geo"
                 },
-                { "filter": "datum.Year == Year_selection" }
+                { "filter": "datum.Year == Year_selection" },
+                {
+                    "calculate": "datum.Forest_cover/100",
+                    "as": "PercentOfTotal"
+                }
             ],
             "params": [{
                     "name": "Chooseone",
@@ -101,9 +106,10 @@
                 
                 "tooltip": [
                     { "field": "Entity", "type": "nominal", "title": "Country" },
-                    { "field": "Forest_cover", "type": "quantitative", "title": "Forest Cover Percentage", "format": ".2f" }
+                    { "field": "PercentOfTotal", "type": "quantitative", "title": "Forest Cover Percentage", "format": ".2%" }
                 ]
             }
         }
     ]
 }
+
